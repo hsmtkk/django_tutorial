@@ -11,5 +11,5 @@ RUN pip install -r requirements.txt
 
 WORKDIR /var/lib/django/mysite
 
-CMD python manage.py runserver $PORT
+CMD python manage.py runserver 0.0.0.0:$PORT
 

@@ -12,5 +12,5 @@ RUN pip install pipenv \
 
 WORKDIR /var/lib/django/mysite
 
-CMD pipenv python manage.py runserver $PORT
+CMD pipenv run python manage.py runserver $PORT
 

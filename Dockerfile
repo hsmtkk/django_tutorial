@@ -11,5 +11,7 @@ RUN pip install -r requirements.txt
 
 WORKDIR /var/lib/django/mysite
 
+RUN python manage.py migrate
+
 CMD python manage.py runserver 0.0.0.0:$PORT
 
